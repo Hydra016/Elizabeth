@@ -1,13 +1,5 @@
-<h1>{% if section.settings.title == blank %}
-    {{ 'general.404.title' | t }}
-{% else %}
-    {{ section.settings.title }}
-{% endif %}</h1>
-<p>{% if section.settings.subtext == blank %}
-    {{ 'general.404.subtext_html' | t }}
-{% else %}
-    {{ section.settings.subtext }}
-{% endif %}</p>
+<h1>{{ section.settings.title }}</h1>
+<p>{{ section.settings.subtext }}</p>
 
 {% schema %}
 {
@@ -16,13 +8,13 @@
 {
 "type": "text",
 "id": "title",
-"default": "",
+"default": "404 not found",
 "label": "404 Heading Title"
 },
 {
 "type": "text",
 "id": "subtext",
-"default": "",
+"default": "page not found",
 "label": "404 subtext"
 }
 ]

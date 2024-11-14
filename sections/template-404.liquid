@@ -1,18 +1,30 @@
-
 <div class="max-w-md">
-    <div class="text-5xl font-bold my-4">{{ section.settings.title }}</div>
+    <div class="text-5xl font-bold my-4">
+        {% if section.settings.title == blank %}
+        {% assign title = 'general.404.title' | t %}
+        {% else %}
+        {% assign title = section.settings.title %}
+        {% endif %}
+        {{ title }}
+    </div>
     <div class="my-4">
         <p class="text-base md:text-xl leading-normal">
-            {{ section.settings.subtext }}
+            {% if section.settings.subtext == blank %}
+            {% assign subtext = 'general.404.subtext_html' | t %}
+            {% else %}
+            {% assign subtext = section.settings.subtext %}
+            {% endif %}
+            {{ subtext }}
         </p>
     </div>
     <div class="my-4">
         {% if section.settings.button_url == blank %}
-            {% assign shop_url = shop.secure_url %}
+        {% assign shop_url = shop.secure_url %}
         {% else %}
-            {% assign shop_url = section.settings.button_url %}
+        {% assign shop_url = section.settings.button_url %}
         {% endif %}
-        <a class="px-4 inline py-2 text-base font-medium shadow bg-green-600 hover:bg-green-800 text-white" href="{{ shop_url }}">{{ section.settings.button_label }}</a>
+        <a class="px-4 inline py-2 text-base font-medium shadow bg-green-600 hover:bg-green-800 text-white"
+            href="{{ shop_url }}">{{ section.settings.button_label }}</a>
     </div>
 </div>
 
@@ -25,13 +37,11 @@
 {
 "type": "text",
 "id": "title",
-"default": "404 not found",
 "label": "404 Heading Title"
 },
 {
 "type": "text",
 "id": "subtext",
-"default": "page not found",
 "label": "404 subtext"
 },
 {

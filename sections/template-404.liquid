@@ -1,5 +1,13 @@
-<h1>{{ section.settings.title }}</h1>
-<p>{{ section.settings.subtext }}</p>
+<h1>{% if section.settings.title == blank %}
+    {{ 'general.404.title' | t }}
+{% else %}
+    {{ section.settings.title }}
+{% endif %}</h1>
+<p>{% if section.settings.subtext == blank %}
+    {{ 'general.404.subtext_html' | t }}
+{% else %}
+    {{ section.settings.subtext }}
+{% endif %}</p>
 
 {% schema %}
 {
@@ -8,13 +16,13 @@
 {
 "type": "text",
 "id": "title",
-"default": "general.404.title",
+"default": "",
 "label": "404 Heading Title"
 },
 {
 "type": "text",
 "id": "subtext",
-"default": "general.404.subtext_html",
+"default": "",
 "label": "404 subtext"
 }
 ]

@@ -584,6 +584,11 @@ video {
   margin-bottom: -0.5rem;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -592,11 +597,6 @@ video {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
 }
 
 .-ml-5 {
@@ -669,12 +669,12 @@ video {
   height: 1.5rem;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .h-80 {
   height: 20rem;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-full {
@@ -685,16 +685,16 @@ video {
   width: 100vw;
 }
 
-.max-w-md {
-  max-width: 28rem;
+.max-w-4xl {
+  max-width: 56rem;
 }
 
 .max-w-7xl {
   max-width: 80rem;
 }
 
-.max-w-4xl {
-  max-width: 56rem;
+.max-w-md {
+  max-width: 28rem;
 }
 
 .origin-top-left {
@@ -786,6 +786,11 @@ video {
   border-width: 1px;
 }
 
+.bg-blue-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
 .bg-green-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
@@ -794,11 +799,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-blue-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -870,6 +870,11 @@ video {
   text-align: center;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
@@ -890,11 +895,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -905,6 +905,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .leading-normal {
@@ -1030,14 +1034,14 @@ video {
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 

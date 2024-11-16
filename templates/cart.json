@@ -4,9 +4,17 @@
     "template": {
       "type": "template-cart",
       "blocks": {
-        
+        "subtotal": {
+          "type": "subtotal"
+        },
+        "update-button": {
+          "type": "update_button"
+        },
+        "checkout-button": {
+          "type": "checkout_button"
+        }
       },
-      "block_order": []
+      "block_order": ["subtotal", "update-button", "checkout-button"]
     }
   },
   "order": ["template"]

@@ -1,0 +1,13 @@
+{
+  "name": "Cart",
+  "sections": {
+    "template": {
+      "type": "template-cart",
+      "blocks": {
+        
+      },
+      "block_order": []
+    }
+  },
+  "order": ["template"]
+}

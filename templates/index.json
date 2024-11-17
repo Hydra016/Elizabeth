@@ -46,7 +46,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Snowboard Jizz",
-        "featured_collection": "snowboard-jizz",
+        "featured_collection": "frontpage",
         "show_vendor": true,
         "products_limit": 4
       }

@@ -10,7 +10,7 @@
 
     <div class="max-w-6xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-            {% for product in section.settings.featured_collection.products limit: 4 %}
+            {% for product in section.settings.featured_collection.products limit: section.settings.products_limit %}
             {% render 'product-card', product: product %}
             {% endfor %}
         </div>
@@ -37,6 +37,12 @@
 "id": "show_vendor",
 "label": "Show Vendor",
 "default": true
+},
+{
+"type": "number",
+"id": "products_limit",
+"label": "Product Limit",
+"default": 4
 }
 ],
 "blocks": [

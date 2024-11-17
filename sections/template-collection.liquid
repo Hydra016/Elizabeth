@@ -3,12 +3,12 @@
 
 {% else %}
 {% if section.settings.no_collections == blank %}
-    {% assign no_collections = 'general.Collection.no_collections' | t %}
+{% assign no_collections = 'general.Collection.no_collections' | t %}
 {% else %}
-    {% assign no_collections = section.settings.no_collections%}
+{% assign no_collections = section.settings.no_collections%}
 {% endif %}
 
-        <p>{{ no_collections }}</p>
+<p>{{ no_collections }}</p>
 {% endfor %}
 {% endpaginate %}
 
@@ -23,10 +23,10 @@
 "default": 12
 },
 {
-    "type": "text",
-    "id": "no_collections",
-    "label": "No Collections Text",
-    "default": "There are no products in the collection"
+"type": "text",
+"id": "no_collections",
+"label": "No Collections Text",
+"default": ""
 }
 ],
 "blocks": []

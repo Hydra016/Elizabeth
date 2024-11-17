@@ -7,9 +7,9 @@
 {% else %}
 {% assign no_collections = section.settings.no_collections%}
 {% endif %}
-
 <p>{{ no_collections }}</p>
 {% endfor %}
+{% render 'pagination', pagination: paginate %}
 {% endpaginate %}
 
 {% schema %}

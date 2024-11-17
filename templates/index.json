@@ -1,16 +1,26 @@
 {
-    "sections": {
-      "featured-collection": {
-        "type": "featured-collection",
-        "settings": {
-            "featured_collection": "all"
-          },
-        "blocks": {
-         
+  "sections": {
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "featured_collection": "all"
+      },
+      "blocks": {
+        "title": {
+          "type": "product_title"
         },
-        "block_order": []
-      }
-    },
-    "order": ["featured-collection"]
-  }
-  
+        "vendor": {
+          "type": "product_vendor"
+        },
+        "price": {
+          "type": "product_price"
+        },
+        "image": {
+          "type": "product_image"
+        }
+      },
+      "block_order": ["image", "title", "vendor", "price"]
+    }
+  },
+  "order": ["featured-collection"]
+}

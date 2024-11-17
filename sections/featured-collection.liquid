@@ -1,22 +1,46 @@
 {% for product in section.settings.featured_collection.products %}
-    {% render 'product-card', product: product %}
+{% render 'product-card', product: product %}
 {% endfor %}
 
 {% schema %}
 {
-    "name": "Featured Collection",
-    "settings": [
-        {
-            "type": "text",
-            "id": "title",
-            "default": "Featured Collection",
-            "label": "Title"
-        },
-        {
-            "type": "collection",
-            "id": "featured_collection",
-            "label": "Collection"
-        }
-        ]
+"name": "Featured Collection",
+"settings": [
+{
+"type": "text",
+"id": "title",
+"default": "Featured Collection",
+"label": "Title"
+},
+{
+"type": "collection",
+"id": "featured_collection",
+"label": "Collection"
+},
+{
+"type": "checkbox",
+"id": "show_vendor",
+"label": "Show Vendor",
+"default": true
+}
+],
+"blocks": [
+{
+"type": "product_title",
+"name": "Product Title"
+},
+{
+"type": "product_vendor",
+"name": "Product Vendor"
+},
+{
+"type": "product_price",
+"name": "Product Price"
+},
+{
+"type": "product_image",
+"name": "Product Image"
+}
+]
 }
 {% endschema %}

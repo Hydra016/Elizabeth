@@ -45,10 +45,10 @@
     "featured_collection_rX38V6": {
       "type": "featured-collection",
       "settings": {
-        "title": "",
-        "featured_collection": "",
+        "title": "Snowboard Jizz",
+        "featured_collection": "snowboard-jizz",
         "show_vendor": true,
-        "products_limit": 4
+        "products_limit": 6
       }
     }
   },

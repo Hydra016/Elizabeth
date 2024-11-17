@@ -36,24 +36,14 @@
         "price"
       ],
       "settings": {
-        "title": "",
+        "title": "Snowboard Jizz",
         "featured_collection": "snowboard-jizz",
         "show_vendor": true,
-        "products_limit": 4
-      }
-    },
-    "featured_collection_rX38V6": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Snowboard Jizz",
-        "featured_collection": "frontpage",
-        "show_vendor": true,
-        "products_limit": 4
+        "products_limit": 12
       }
     }
   },
   "order": [
-    "featured-collection",
-    "featured_collection_rX38V6"
+    "featured-collection"
   ]
 }

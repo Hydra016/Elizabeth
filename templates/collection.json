@@ -1,24 +1,49 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-  "name": "Collections",
   "sections": {
     "template": {
       "type": "template-collection",
       "blocks": {
+        "image": {
+          "type": "product_image",
+          "settings": {}
+        },
         "title": {
-          "type": "product_title"
+          "type": "product_title",
+          "settings": {}
         },
         "vendor": {
-          "type": "product_vendor"
+          "type": "product_vendor",
+          "settings": {}
         },
         "price": {
-          "type": "product_price"
-        },
-        "image": {
-          "type": "product_image"
+          "type": "product_price",
+          "settings": {}
         }
       },
-      "block_order": ["image", "title", "vendor", "price"]
+      "block_order": [
+        "image",
+        "title",
+        "vendor",
+        "price"
+      ],
+      "settings": {
+        "product_limit": 12,
+        "no_collections": "",
+        "show_vendor": true,
+        "transition_speed": 700
+      }
     }
   },
-  "order": ["template"]
+  "order": [
+    "template"
+  ]
 }

@@ -15,6 +15,9 @@
     },
     "Collection": {
       "no_collections": "There are no products in the collection"
+    },
+    "Index": {
+      "featured_collections": "Featured Collection"
     }
   }
 }

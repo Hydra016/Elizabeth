@@ -3,6 +3,9 @@
   "sections": {
     "template": {
       "type": "template-collection",
+      "settings": {
+        "featured_collection": "all"
+      },
       "blocks": {
         "title": {
           "type": "product_title"

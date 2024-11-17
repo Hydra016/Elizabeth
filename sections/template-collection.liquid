@@ -1,6 +1,11 @@
 {% paginate collection.products by section.settings.product_limit%}
 {% for product in collection.products %}
-
+    {% if product.featured_image %}
+        <img src="{{ product.featured_image |  img_url: 'medium' }}" alt="{{ product.title }}">
+    {% endif %}
+    <span>{{ product.vendor }}</span>
+<a href="{{ product.url }}">{{ product.title }}</a>
+<p>{{ product.price |  money }}</p>
 {% else %}
 {% if section.settings.no_collections == blank %}
 {% assign no_collections = 'general.Collection.no_collections' | t %}

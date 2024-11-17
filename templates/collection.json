@@ -39,7 +39,7 @@
         "product_limit": 12,
         "no_collections": "",
         "show_vendor": true,
-        "transition_speed": 700
+        "transition_speed": 1000
       }
     }
   },

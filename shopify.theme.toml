@@ -1,0 +1,2 @@
+[environments.development]
+store = "https://haiders-dev-app.myshopify.com/"
